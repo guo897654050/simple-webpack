@@ -17,3 +17,7 @@
 3. loader处理，由于loader本质是一个function，通过正则匹配文件，那么我们只需要将读取的文件即fs读取的文件作为入参传入到loader即可。
 4. plugins，本质是一个class，涉及到多个钩子，在不用的钩子节点可以进行处理。具体参考`plugins`文件夹下的文件。
 
+#### 执行
+- `yarn`安装对应依赖。
+- `npm link` 将bin目录的命令会映射到对应的node的`/bin`目录下，然后可以执行此命令。
+- `simple-pack` 执行命令，查看输出。
