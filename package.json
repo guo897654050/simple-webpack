@@ -5,6 +5,9 @@
   "bin": {
     "simple-pack": "./bin/simple-pack.js"
   },
+  "scripts": {
+    "build": "webpack --mode development"
+  },
   "repository": "https://github.com/guo897654050/simple-webpack.git",
   "author": "guoxiaoyang395 <guoxiaoyang395@hellobike.com>",
   "license": "MIT",

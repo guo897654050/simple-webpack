@@ -1,5 +1,5 @@
 const path = require('path');
-
+const No1WebpackPlugin = require('./plugins/no1-webpack-plugins');
 
 module.exports = {
   entry: './src/index.js',
@@ -8,12 +8,15 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: ['loader1.js']
-      }
-    ]
-  }
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.js$/,
+  //       use: ['loader1.js']
+  //     }
+  //   ]
+  // },
+  plugins: [
+    new No1WebpackPlugin({ msg: 'it is ok~' })
+  ]
 }
