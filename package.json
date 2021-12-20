@@ -1,0 +1,19 @@
+{
+  "name": "simple-webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "simple-pack": "./bin/simple-pack.js"
+  },
+  "repository": "https://github.com/guo897654050/simple-webpack.git",
+  "author": "guoxiaoyang395 <guoxiaoyang395@hellobike.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/generator": "^7.16.0",
+    "@babel/parser": "^7.16.4",
+    "@babel/traverse": "^7.16.3",
+    "ejs": "^3.1.6",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
