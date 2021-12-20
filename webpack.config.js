@@ -1,6 +1,7 @@
 const path = require('path');
 const No1WebpackPlugin = require('./plugins/no1-webpack-plugins');
-const No2WebpackPlugin = require('./plugins/no2-webpack-plugins')
+const No2WebpackPlugin = require('./plugins/no2-webpack-plugins');
+// const FileListPlugin = require('./plugins/fileListPlugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -19,6 +20,7 @@ module.exports = {
   },
   plugins: [
     // new No1WebpackPlugin({ msg: 'it is ok~' }),
-    new No2WebpackPlugin({ msg: 'ooooooook' })
+    new No2WebpackPlugin({ msg: 'ooooooook' }),
+    // new FileListPlugin()
   ]
 }
